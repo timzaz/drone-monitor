@@ -68,7 +68,7 @@ def post_random_location(drone):
         #: Generate lat/lon coordinates and round to 6 decimal places
         latitude = round(uniform(min_latitude, max_latitude), 6)
         longitude = round(uniform(min_longitude, max_longitude), 6)
-        url = 'http://localhost:9000/update'
+        url = 'http://localhost:5000/update'
 
         data = {
             'drone': drone,
