@@ -44,15 +44,16 @@ def drone_update():
 
     last_update = store.get(drone, None)
     if last_update:
+        #: Kilometers
         distance_travelled = distance(
             latitude,
             longitude,
             last_update.get('lat'),
             last_update.get('lon')
-        )  # calculate
+        )
         elapsed = posted - last_update.get('time')
 
-        if distance_travelled <= 1 and elapsed > 10:
+        if (distance_travelled * 1000) <= 1 and elapsed > 10:
             highlight = True
         speed = round(distance_travelled / elapsed)
 
