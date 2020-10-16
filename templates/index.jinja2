@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Drone Monitor</title>
+        <link
+            href="{{ url_for('static', filename='bulma.min.css') }}"
+            rel="stylesheet"
+            type="text/css" />
+        
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='socket.io.js') }}"></script>
+        
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='live.js') }}"></script>
+    </head>
+    <body>
+ 
+        <section class="hero is-info is-fullheight">
+            <div class="hero-head">
+                <nav
+                    class="navbar"
+                    role="navigation"
+                    aria-label="main navigation">
+
+                    <div class="navbar-brand">
+                        <a
+                            class="navbar-item title"
+                            href="{{ url_for('index') }}">
+                            Drone Monitor
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="hero-body">
+                <div class="container">
+                    <p class="subtitle">
+                        Static drones - haven't moved in 10 seconds - are
+                        highlighted
+                    </p>
+                    <div class="content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Drone</th>
+                                    <th>Speed (km/hr)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
