@@ -84,7 +84,7 @@ def post_random_location(drone):
 #: Spawn Simulators
 def spawn():
     """Spawn simulators
-5
+
     """
 
     jobs = list()
