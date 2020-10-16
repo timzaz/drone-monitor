@@ -32,14 +32,14 @@ function bootstrap () {
 
         try {
             let oldElement = document.getElementById(data.drone)
-            if (typeof oldElement !== "undefined") {
-                body.removeChild(oldElement)
+            if (!!oldElement) {
+                body.replaceChild(element, oldElement)
+            } else {
+                body.appendChild(element)
             }
         } catch (error) {
             
         }
-        
-        body.appendChild(element)
     })
 }
 
