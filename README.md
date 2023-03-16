@@ -1,5 +1,7 @@
 # Drone Monitor
 
+This app was developed to fulfill some recruitment criteria years ago.
+
 This app simulates the location tracking of drones in realtime as they fly around the country.
 
 The application is built with the Flask python framework with the Python
