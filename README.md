@@ -1,11 +1,9 @@
 # Drone Monitor
 
-This app tracks the location of DSTI drones in realtime as they fly around the
-country.
+This app simulates the location tracking of drones in realtime as they fly around the country.
 
 The application is built with the Flask python framework with the Python
 Socket IO powering its `realtimeness`.
-
 
 ## How it works
 
@@ -29,7 +27,6 @@ the drone should be highlighted on the dashboard.
 It is only highlighted when the former is more than 10 seconds and the latter
 is true.
 
-
 ## Assumptions made in the design of the application
 
 - Network latency is regarded as negligible. It is assumed a very efficient
@@ -48,7 +45,6 @@ is true.
   the simulation data. This technical discrepancy is considered
   'not-that-relevant' for this assignment.
 
-
 ## Build Image
 
 ```bash
@@ -63,6 +59,6 @@ is true.
 
 ## Access Dashboard
 
-Open http://localhost:5000 in any browser
+Open [localhost](http://localhost:5000) in any browser
 
 ![Snapshot](drone-monitor.png)

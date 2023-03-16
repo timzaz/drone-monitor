@@ -20,6 +20,7 @@ function bootstrap () {
         let element = document.createElement('tr')
         element.id = data.drone
 
+        // Mistake: element.highlight should be data.highlight
         if (element.highlight) element.classList.add('is-selected')
         let droneData = document.createElement('td')
         droneData.innerText = data.drone
